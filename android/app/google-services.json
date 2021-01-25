@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "86167266843",
+    "project_id": "appanime-75171",
+    "storage_bucket": "appanime-75171.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86167266843:android:ad385f0ea138ba4fdefabe",
+        "android_client_info": {
+          "package_name": "com.wolfcodea.anime.appanime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86167266843-t02p2ves7sgd74puv781lmaiagkbsdk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wolfcodea.anime.appanime",
+            "certificate_hash": "55993b5eb140e4798e4e9fd9e22b8ada18fc4235"
+          }
+        },
+        {
+          "client_id": "86167266843-eidhapsn6nn1n95pnuvno846775umijo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSRMsb3NON6ngVjnLbg4cMfJl8eLzLBU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86167266843-eidhapsn6nn1n95pnuvno846775umijo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

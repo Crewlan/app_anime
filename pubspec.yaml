@@ -1,0 +1,46 @@
+name: appanime
+description: A Mobile Application for view animes and mangás online
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  auto_size_text: ^2.1.0
+  bloc: ^6.0.2
+  cupertino_icons: ^1.0.0
+  dartz: ^0.9.1
+  flutter_bloc: ^6.0.5
+  flutter_launcher_icons: ^0.8.1
+  freezed_annotation: ^0.11.0+1
+  get_it: ^4.0.4
+  google_fonts: ^1.1.0
+  intl: ^0.16.1
+  json_serializable: ^3.4.0
+  material_design_icons_flutter: ^4.0.5345
+  cloud_firestore: ^0.16.0
+  firebase_core: ^0.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  #? Code generators
+  build_runner: ^1.10.0
+
+  #? Linter
+  effective_dart: ^1.2.4
+  freezed: ^0.11.5
+
+
+
+flutter:
+  uses-material-design: true
+
+  
