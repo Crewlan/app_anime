@@ -1,11 +1,12 @@
-import 'package:appanime/core/colors/app_colors.dart';
-import 'package:appanime/core/navigations/router.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/date_symbol_data_local.dart';
+
+import 'core/navigations/router.dart';
 import 'core/navigations/routes.dart';
-import 'core/strings/app_strings.dart';
+import 'core/utils/colors/app_colors.dart';
+import 'core/utils/strings/app_strings.dart';
 import 'injection_container.dart' as di;
 
 void main() async {
