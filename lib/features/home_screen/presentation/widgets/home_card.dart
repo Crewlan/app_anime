@@ -1,7 +1,13 @@
-import 'package:appanime/core/utils/strings/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class HomeCard extends StatelessWidget {
+  final String title;
+  final String episode;
+  final String image;
+
+  const HomeCard({Key key, this.title, this.episode, this.image})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -28,7 +34,7 @@ class HomeCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: Image.network(
-                  'https://www.einerd.com.br/wp-content/uploads/2019/09/One-Piece-capa-890x466.png',
+                  image,
                   height: 125,
                   width: 147,
                   fit: BoxFit.fill,
@@ -42,11 +48,11 @@ class HomeCard extends StatelessWidget {
                   SizedBox(
                     height: 50,
                   ),
-                  Text(AppStrings.appAnimeName),
+                  Text(title),
                   SizedBox(
                     height: 20,
                   ),
-                  Text(AppStrings.appAnimeSubtitle),
+                  Text('Episodio: $episode'),
                 ],
               ),
             ],
