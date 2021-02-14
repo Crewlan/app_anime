@@ -1,67 +1,58 @@
+import 'package:appanime/core/utils/colors/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeCard extends StatelessWidget {
   final String title;
   final String episode;
   final String image;
+  final Function onTap;
 
-  const HomeCard({Key key, this.title, this.episode, this.image})
+  const HomeCard({Key key, this.title, this.episode, this.image, this.onTap})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          margin: EdgeInsets.symmetric(horizontal: 32),
-          width: MediaQuery.of(context).size.width,
-          height: 151,
-          decoration: BoxDecoration(
-              color: Colors.white,
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        margin: EdgeInsets.only(
+          left: 26,
+        ),
+        child: Column(
+          children: [
+            ClipRRect(
               borderRadius: BorderRadius.circular(16),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  spreadRadius: 0,
-                  blurRadius: 2,
-                  offset: Offset(1, 2),
-                ),
-              ]),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: Image.network(
-                  image,
-                  height: 125,
-                  width: 147,
-                  fit: BoxFit.fill,
-                ),
+              child: Image.network(
+                image,
+                height: 198,
+                width: 142,
+                fit: BoxFit.fill,
               ),
-              SizedBox(
-                width: 20,
+            ),
+            SizedBox(
+              height: 14,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                title,
+                style: GoogleFonts.alegreyaSansSc(color: AppColors.purpleLight),
               ),
-              Column(
-                children: [
-                  SizedBox(
-                    height: 50,
-                  ),
-                  Text(title),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text('Episodio: $episode'),
-                ],
+            ),
+            SizedBox(
+              height: 1,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Episodio: $episode',
+                style: GoogleFonts.alegreyaSansSc(color: AppColors.purpleLight),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
-        SizedBox(
-          height: 15,
-        ),
-      ],
+      ),
     );
   }
 }
