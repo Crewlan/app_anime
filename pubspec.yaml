@@ -29,6 +29,8 @@ dependencies:
   fluid_bottom_nav_bar: ^1.2.0
   http: ^0.12.2
   http_interceptor: ^0.3.3
+  jikan_api: ^1.5.0+1
+  equatable: ^1.2.6
 
 
 dev_dependencies:

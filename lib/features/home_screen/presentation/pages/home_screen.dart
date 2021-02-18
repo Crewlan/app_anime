@@ -1,10 +1,10 @@
-import 'package:appanime/core/utils/colors/app_colors.dart';
-import 'package:appanime/core/utils/images/app_images.dart';
 import 'package:fluid_bottom_nav_bar/fluid_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:jikan_api/jikan_api.dart';
 
-import '../widgets/home_card.dart';
+import '../../../../core/utils/colors/app_colors.dart';
+import '../../../../core/utils/images/app_images.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -12,6 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  var jikan = Jikan();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,6 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SafeArea(
           child: Column(
             children: [
-              //TODO: Create a card model to animes
               Container(
                 margin: EdgeInsets.symmetric(horizontal: 32),
                 child: Row(
@@ -64,38 +64,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Container(
                       height: 310,
                       width: MediaQuery.of(context).size.width,
-                      child: ListView(
+                      child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        children: [
-                          HomeCard(
-                            image:
-                                'https://www.einerd.com.br/wp-content/uploads/2019/09/One-Piece-capa-890x466.png',
-                            title: 'One Piece',
-                            episode: '757',
-                            onTap: () {},
-                          ),
-                          HomeCard(
-                            image:
-                                'https://www.einerd.com.br/wp-content/uploads/2019/09/One-Piece-capa-890x466.png',
-                            title: 'One Piece',
-                            episode: '757',
-                            onTap: () {},
-                          ),
-                          HomeCard(
-                            image:
-                                'https://www.einerd.com.br/wp-content/uploads/2019/09/One-Piece-capa-890x466.png',
-                            title: 'One Piece',
-                            episode: '757',
-                            onTap: () {},
-                          ),
-                          HomeCard(
-                            image:
-                                'https://www.einerd.com.br/wp-content/uploads/2019/09/One-Piece-capa-890x466.png',
-                            title: 'One Piece',
-                            episode: '757',
-                            onTap: () {},
-                          ),
-                        ],
+                        itemCount: 1,
+                        itemBuilder: (context, index) {
+                          return Container(
+                              //TODO: RETORNAR HOME CARD E NO ITEM COUNT FAZER ELE PUXAR DE UM DATASORCE E MODELS ETC BLA BLA BLA :D
+                              );
+                        },
                       ),
                     ),
                   ),
