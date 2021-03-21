@@ -1,4 +1,4 @@
-import 'package:appanime/core/utils/colors/app_colors.dart';
+import 'package:appanime/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -37,7 +37,7 @@ class HomeCard extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 title,
-                style: GoogleFonts.alegreyaSansSc(color: AppColors.purpleLight),
+                style: GoogleFonts.alegreyaSansSc(color: AppColors.lightest),
               ),
             ),
             SizedBox(
@@ -47,7 +47,7 @@ class HomeCard extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 'Episodio: $episode',
-                style: GoogleFonts.alegreyaSansSc(color: AppColors.purpleLight),
+                style: GoogleFonts.alegreyaSansSc(color: AppColors.lightest),
               ),
             ),
           ],

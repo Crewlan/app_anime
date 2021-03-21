@@ -1,10 +1,8 @@
-import 'package:fluid_bottom_nav_bar/fluid_bottom_nav_bar.dart';
+
+import 'package:appanime/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:jikan_api/jikan_api.dart';
 
-import '../../../../core/utils/colors/app_colors.dart';
-import '../../../../core/utils/images/app_images.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -12,23 +10,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  var jikan = Jikan();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: AppColors.purple,
-        bottomNavigationBar: SafeArea(
-          bottom: true,
-          child: FluidNavBar(
-            icons: [
-              FluidNavBarIcon(svgPath: AppImages.play),
-              FluidNavBarIcon(svgPath: AppImages.book),
-              FluidNavBarIcon(svgPath: AppImages.home),
-              FluidNavBarIcon(svgPath: AppImages.fav),
-              FluidNavBarIcon(svgPath: AppImages.extras),
-            ],
-          ),
-        ),
+        backgroundColor: AppColors.lightest,
         body: SafeArea(
           child: Column(
             children: [
@@ -41,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Text(
                       'Lançamentos',
                       style: GoogleFonts.abel(
-                          fontSize: 20, color: AppColors.purpleTitle),
+                          fontSize: 20, color: AppColors.lightest),
                     ),
                     Align(
                       alignment: Alignment.bottomRight,
@@ -49,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         'Ver mais',
                         textAlign: TextAlign.end,
                         style: GoogleFonts.abel(
-                            fontSize: 16, color: AppColors.purpleTitle),
+                            fontSize: 16, color: AppColors.lightest),
                       ),
                     ),
                   ],
