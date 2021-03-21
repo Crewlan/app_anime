@@ -22,16 +22,14 @@ dependencies:
   get_it: ^4.0.4
   google_fonts: ^1.1.0
   intl: ^0.16.1
-  json_serializable: ^3.4.0
   material_design_icons_flutter: ^4.0.5345
-  cloud_firestore: ^0.16.0
-  firebase_core: ^0.7.0
-  fluid_bottom_nav_bar: ^1.2.0
+  flutter_platform_widgets: ^0.72.0
+  connectivity: 2.0.2
+  parse_server_sdk_flutter: ^2.1.0
+  equatable: ^1.2.6
+  json_serializable: ^3.5.1
   http: ^0.12.2
   http_interceptor: ^0.3.3
-  jikan_api: ^1.5.0+1
-  equatable: ^1.2.6
-
 
 dev_dependencies:
   flutter_test:
