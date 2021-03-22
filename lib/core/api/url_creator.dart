@@ -11,14 +11,14 @@ abstract class IUrlCreator {
 }
 
 class UrlCreator implements IUrlCreator {
-  static const _urlKey = 'https://parseapi.back4app.com';
+  static const _urlKey = 'parseapi.back4app.com';
 
   @override
   String create({
     String endpoint,
     Map<String, dynamic> queryParameters,
     List<String> pathSegments,
-    String scheme,
+    String scheme = 'https',
     int port,
   }) {
     return Uri(

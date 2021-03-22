@@ -1,28 +1,34 @@
 import 'package:equatable/equatable.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'get_top_animes.g.dart';
 
-@JsonSerializable(nullable: false)
-class GetTopAnimes extends Equatable {
+class GetTopAnimesModel extends Equatable {
   final String animeTitle;
   final String url;
   final String image;
+  final String description;
 
-  GetTopAnimes({
+  GetTopAnimesModel({
     this.animeTitle,
     this.url,
     this.image,
+    this.description
   });
+  //Construtor da classe
 
   @override
   List<Object> get props => [
         animeTitle,
         url,
         image,
+        description,
       ];
+  //Props algo que o Equatable pede para gerar sempre
 
-  factory GetTopAnimes.fromJson(Map<String, dynamic> json) =>
-      _$GetTopAnimesFromJson(json);
-  Map<String, dynamic> toJson() => _$GetTopAnimesToJson(this);
+  factory GetTopAnimesModel.fromJson(Map<String, dynamic> json) =>
+      GetTopAnimesModel(
+        animeTitle: json['animeTItle'],
+        url: json['url'],
+        image: json['image']
+      );
+  //Função fromJson que serve para identificar cada item dentro do json
 }

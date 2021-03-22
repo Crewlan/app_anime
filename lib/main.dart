@@ -1,5 +1,6 @@
 import 'package:appanime/core/utils/app_colors.dart';
 import 'package:appanime/core/navigations/router.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +14,8 @@ import 'injection_container.dart' as di;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await di.init();
+  
+  EquatableConfig.stringify = true;
   runApp(App());
 }
 
