@@ -1,3 +1,6 @@
 part of 'home_screen_bloc.dart';
-@immutable
-abstract class HomeScreenEvent {}
+
+@freezed
+abstract class HomeScreenEvent with _$HomeScreenEvent{
+  const factory HomeScreenEvent.load() = _Load;
+}

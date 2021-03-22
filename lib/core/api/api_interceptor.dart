@@ -48,7 +48,6 @@ class HttpClient extends IHttpClient implements InterceptorContract {
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
         'X-Parse-REST-API-Key': 'j7BNP7efCnkfTEwlEtEy94c4RnOP2UJ67Df1tPlA',
-        'X-Parse-Revocable-Session': '1',
         'Content-Type': 'application/json'
       },
     );
@@ -67,7 +66,6 @@ class HttpClient extends IHttpClient implements InterceptorContract {
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
         'X-Parse-REST-API-Key': 'j7BNP7efCnkfTEwlEtEy94c4RnOP2UJ67Df1tPlA',
-        'X-Parse-Revocable-Session': '1',
         'Content-Type': 'application/json'
       },
     );
@@ -86,7 +84,6 @@ class HttpClient extends IHttpClient implements InterceptorContract {
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
         'X-Parse-REST-API-Key': 'j7BNP7efCnkfTEwlEtEy94c4RnOP2UJ67Df1tPlA',
-        'X-Parse-Revocable-Session': '1',
         'Content-Type': 'application/json'
       },
     );
@@ -105,7 +102,6 @@ class HttpClient extends IHttpClient implements InterceptorContract {
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
         'X-Parse-REST-API-Key': 'j7BNP7efCnkfTEwlEtEy94c4RnOP2UJ67Df1tPlA',
-        'X-Parse-Revocable-Session': '1',
         'Content-Type': 'application/json'
       },
     );
