@@ -6,25 +6,25 @@ import 'package:http_interceptor/models/response_data.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 
 abstract class IHttpClient {
-  Future<Response> get(String endPoint, {Map<String, String> headers});
-  Future<Response> post(String endPoint, String body, {Map<String, String> headers});
-  Future<Response> patch(String endPoint, String body, {Map<String, String> headers});
-  Future<Response> put(String endPoint, String body, {Map<String, String> headers});
-  Future<Response> delete(String endPoint, {Map<String, String> headers});
+  Future<Response> get(String? endPoint, {Map<String, String>? headers});
+  Future<Response> post(String? endPoint, String body, {Map<String, String>? headers});
+  Future<Response> patch(String? endPoint, String body, {Map<String, String>? headers});
+  Future<Response> put(String? endPoint, String body, {Map<String, String>? headers});
+  Future<Response> delete(String? endPoint, {Map<String, String>? headers});
 }
 
 class HttpClient extends IHttpClient implements InterceptorContract {
-  HttpClientWithInterceptor _client;
+  late HttpClientWithInterceptor _client;
 
   HttpClient() {
     _client = HttpClientWithInterceptor.build(interceptors: [this]);
   }
 
   @override
-  Future<RequestData> interceptRequest({RequestData data}) async {
+  Future<RequestData> interceptRequest({RequestData? data}) async {
     var token = await ParseUser.currentUser();
-    data.headers['Content-Type'] = "application/json";
-    if (!data.headers.containsKey('Authorization')) {
+    data?.headers['Content-Type'] = "application/json";
+    if (data!.headers.containsKey('Authorization')) {
       data.headers["Authorization"] = token;
     }
 
@@ -32,8 +32,8 @@ class HttpClient extends IHttpClient implements InterceptorContract {
   }
 
   @override
-  Future<ResponseData> interceptResponse({ResponseData data}) async {
-    print('Response ${data.url}');
+  Future<ResponseData> interceptResponse({ResponseData? data}) async {
+    print('Response ${data!.url}');
     print('status code:  ${data.statusCode}');
     print('headers ${data.headers}');
     print('body: ${data.body}');
@@ -42,9 +42,9 @@ class HttpClient extends IHttpClient implements InterceptorContract {
   }
 
   @override
-  Future<Response> get(String endPoint, {Map<String, String> headers}) async {
+  Future<Response> get(String? endPoint, {Map<String, String>? headers}) async {
     final response = await _client.get(
-      endPoint,
+      endPoint!.toUri(),
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
         'X-Parse-REST-API-Key': 'j7BNP7efCnkfTEwlEtEy94c4RnOP2UJ67Df1tPlA',
@@ -56,12 +56,12 @@ class HttpClient extends IHttpClient implements InterceptorContract {
 
   @override
   Future<Response> post(
-    String endPoint,
+    String? endPoint,
     String body, {
-    Map<String, String> headers,
+    Map<String, String>? headers,
   }) async {
     final response = await _client.post(
-      endPoint,
+      endPoint!.toUri(),
       body: body,
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
@@ -74,12 +74,12 @@ class HttpClient extends IHttpClient implements InterceptorContract {
 
   @override
   Future<Response> put(
-    String endPoint,
+    String? endPoint,
     String body, {
-    Map<String, String> headers,
+    Map<String, String>? headers,
   }) async {
     final response = await _client.put(
-      endPoint,
+      endPoint!.toUri(),
       body: body,
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
@@ -92,12 +92,12 @@ class HttpClient extends IHttpClient implements InterceptorContract {
 
   @override
   Future<Response> patch(
-    String endPoint,
+    String? endPoint,
     String body, {
-    Map<String, String> headers,
+    Map<String, String>? headers,
   }) async {
     final response = await _client.patch(
-      endPoint,
+      endPoint!.toUri(),
       body: body,
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
@@ -109,9 +109,9 @@ class HttpClient extends IHttpClient implements InterceptorContract {
   }
 
   @override
-  Future<Response> delete(String endPoint, {Map<String, String> headers}) async {
+  Future<Response> delete(String? endPoint, {Map<String, String>? headers}) async {
     final response = await _client.delete(
-      endPoint,
+      endPoint!.toUri(),
       headers: {
         'X-Parse-Application-Id': 'MkWBuU8WugU3s66px38qEidt5s1RX95PyALR46Jp',
         'X-Parse-REST-API-Key': 'j7BNP7efCnkfTEwlEtEy94c4RnOP2UJ67Df1tPlA',

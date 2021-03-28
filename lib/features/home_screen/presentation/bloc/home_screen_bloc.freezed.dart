@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'home_screen_bloc.dart';
 
@@ -9,45 +9,55 @@ part of 'home_screen_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
 class _$HomeScreenEventTearOff {
   const _$HomeScreenEventTearOff();
 
-// ignore: unused_element
   _Load load() {
     return const _Load();
   }
 }
 
-// ignore: unused_element
+/// @nodoc
 const $HomeScreenEvent = _$HomeScreenEventTearOff();
 
+/// @nodoc
 mixin _$HomeScreenEvent {
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result load(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function() load,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result load(),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? load,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result load(_Load value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Load value) load,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result load(_Load value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Load value)? load,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $HomeScreenEventCopyWith<$Res> {
   factory $HomeScreenEventCopyWith(
           HomeScreenEvent value, $Res Function(HomeScreenEvent) then) =
       _$HomeScreenEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$HomeScreenEventCopyWithImpl<$Res>
     implements $HomeScreenEventCopyWith<$Res> {
   _$HomeScreenEventCopyWithImpl(this._value, this._then);
@@ -57,11 +67,13 @@ class _$HomeScreenEventCopyWithImpl<$Res>
   final $Res Function(HomeScreenEvent) _then;
 }
 
+/// @nodoc
 abstract class _$LoadCopyWith<$Res> {
   factory _$LoadCopyWith(_Load value, $Res Function(_Load) then) =
       __$LoadCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadCopyWithImpl<$Res> extends _$HomeScreenEventCopyWithImpl<$Res>
     implements _$LoadCopyWith<$Res> {
   __$LoadCopyWithImpl(_Load _value, $Res Function(_Load) _then)
@@ -71,6 +83,7 @@ class __$LoadCopyWithImpl<$Res> extends _$HomeScreenEventCopyWithImpl<$Res>
   _Load get _value => super._value as _Load;
 }
 
+/// @nodoc
 class _$_Load implements _Load {
   const _$_Load();
 
@@ -89,20 +102,18 @@ class _$_Load implements _Load {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result load(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() load,
   }) {
-    assert(load != null);
     return load();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result load(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? load,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (load != null) {
       return load();
     }
@@ -111,20 +122,18 @@ class _$_Load implements _Load {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result load(_Load value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Load value) load,
   }) {
-    assert(load != null);
     return load(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result load(_Load value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Load value)? load,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (load != null) {
       return load(this);
     }

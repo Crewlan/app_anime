@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'exception.dart';
 
@@ -7,93 +7,98 @@ part of 'exception.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// ignore: unused_element
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
 class _$CustomExceptionTearOff {
   const _$CustomExceptionTearOff();
 
-// ignore: unused_element
   ServerException serverException() {
     return const ServerException();
   }
 
-// ignore: unused_element
   CacheException cacheException() {
     return const CacheException();
   }
 
-// ignore: unused_element
   ConflitctException conflictException() {
     return const ConflitctException();
   }
 
-// ignore: unused_element
   InvalidInputException invalidInputException() {
     return const InvalidInputException();
   }
 
-// ignore: unused_element
   NetworkException networkException() {
     return const NetworkException();
   }
 
-// ignore: unused_element
   NotFoundException notFoundException() {
     return const NotFoundException();
   }
 }
 
-// ignore: unused_element
+/// @nodoc
 const $CustomException = _$CustomExceptionTearOff();
 
+/// @nodoc
 mixin _$CustomException {
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $CustomExceptionCopyWith<$Res> {
   factory $CustomExceptionCopyWith(
           CustomException value, $Res Function(CustomException) then) =
       _$CustomExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CustomExceptionCopyWithImpl<$Res>
     implements $CustomExceptionCopyWith<$Res> {
   _$CustomExceptionCopyWithImpl(this._value, this._then);
@@ -103,12 +108,14 @@ class _$CustomExceptionCopyWithImpl<$Res>
   final $Res Function(CustomException) _then;
 }
 
+/// @nodoc
 abstract class $ServerExceptionCopyWith<$Res> {
   factory $ServerExceptionCopyWith(
           ServerException value, $Res Function(ServerException) then) =
       _$ServerExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ServerExceptionCopyWithImpl<$Res>
     extends _$CustomExceptionCopyWithImpl<$Res>
     implements $ServerExceptionCopyWith<$Res> {
@@ -120,6 +127,7 @@ class _$ServerExceptionCopyWithImpl<$Res>
   ServerException get _value => super._value as ServerException;
 }
 
+/// @nodoc
 class _$ServerException implements ServerException {
   const _$ServerException();
 
@@ -138,35 +146,28 @@ class _$ServerException implements ServerException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return serverException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (serverException != null) {
       return serverException();
     }
@@ -175,35 +176,29 @@ class _$ServerException implements ServerException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return serverException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (serverException != null) {
       return serverException(this);
     }
@@ -215,12 +210,14 @@ abstract class ServerException implements CustomException {
   const factory ServerException() = _$ServerException;
 }
 
+/// @nodoc
 abstract class $CacheExceptionCopyWith<$Res> {
   factory $CacheExceptionCopyWith(
           CacheException value, $Res Function(CacheException) then) =
       _$CacheExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CacheExceptionCopyWithImpl<$Res>
     extends _$CustomExceptionCopyWithImpl<$Res>
     implements $CacheExceptionCopyWith<$Res> {
@@ -232,6 +229,7 @@ class _$CacheExceptionCopyWithImpl<$Res>
   CacheException get _value => super._value as CacheException;
 }
 
+/// @nodoc
 class _$CacheException implements CacheException {
   const _$CacheException();
 
@@ -250,35 +248,28 @@ class _$CacheException implements CacheException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return cacheException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (cacheException != null) {
       return cacheException();
     }
@@ -287,35 +278,29 @@ class _$CacheException implements CacheException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return cacheException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (cacheException != null) {
       return cacheException(this);
     }
@@ -327,12 +312,14 @@ abstract class CacheException implements CustomException {
   const factory CacheException() = _$CacheException;
 }
 
+/// @nodoc
 abstract class $ConflitctExceptionCopyWith<$Res> {
   factory $ConflitctExceptionCopyWith(
           ConflitctException value, $Res Function(ConflitctException) then) =
       _$ConflitctExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ConflitctExceptionCopyWithImpl<$Res>
     extends _$CustomExceptionCopyWithImpl<$Res>
     implements $ConflitctExceptionCopyWith<$Res> {
@@ -344,6 +331,7 @@ class _$ConflitctExceptionCopyWithImpl<$Res>
   ConflitctException get _value => super._value as ConflitctException;
 }
 
+/// @nodoc
 class _$ConflitctException implements ConflitctException {
   const _$ConflitctException();
 
@@ -362,35 +350,28 @@ class _$ConflitctException implements ConflitctException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return conflictException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (conflictException != null) {
       return conflictException();
     }
@@ -399,35 +380,29 @@ class _$ConflitctException implements ConflitctException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return conflictException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (conflictException != null) {
       return conflictException(this);
     }
@@ -439,12 +414,14 @@ abstract class ConflitctException implements CustomException {
   const factory ConflitctException() = _$ConflitctException;
 }
 
+/// @nodoc
 abstract class $InvalidInputExceptionCopyWith<$Res> {
   factory $InvalidInputExceptionCopyWith(InvalidInputException value,
           $Res Function(InvalidInputException) then) =
       _$InvalidInputExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InvalidInputExceptionCopyWithImpl<$Res>
     extends _$CustomExceptionCopyWithImpl<$Res>
     implements $InvalidInputExceptionCopyWith<$Res> {
@@ -456,6 +433,7 @@ class _$InvalidInputExceptionCopyWithImpl<$Res>
   InvalidInputException get _value => super._value as InvalidInputException;
 }
 
+/// @nodoc
 class _$InvalidInputException implements InvalidInputException {
   const _$InvalidInputException();
 
@@ -474,35 +452,28 @@ class _$InvalidInputException implements InvalidInputException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return invalidInputException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (invalidInputException != null) {
       return invalidInputException();
     }
@@ -511,35 +482,29 @@ class _$InvalidInputException implements InvalidInputException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return invalidInputException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (invalidInputException != null) {
       return invalidInputException(this);
     }
@@ -551,12 +516,14 @@ abstract class InvalidInputException implements CustomException {
   const factory InvalidInputException() = _$InvalidInputException;
 }
 
+/// @nodoc
 abstract class $NetworkExceptionCopyWith<$Res> {
   factory $NetworkExceptionCopyWith(
           NetworkException value, $Res Function(NetworkException) then) =
       _$NetworkExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NetworkExceptionCopyWithImpl<$Res>
     extends _$CustomExceptionCopyWithImpl<$Res>
     implements $NetworkExceptionCopyWith<$Res> {
@@ -568,6 +535,7 @@ class _$NetworkExceptionCopyWithImpl<$Res>
   NetworkException get _value => super._value as NetworkException;
 }
 
+/// @nodoc
 class _$NetworkException implements NetworkException {
   const _$NetworkException();
 
@@ -586,35 +554,28 @@ class _$NetworkException implements NetworkException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return networkException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (networkException != null) {
       return networkException();
     }
@@ -623,35 +584,29 @@ class _$NetworkException implements NetworkException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return networkException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (networkException != null) {
       return networkException(this);
     }
@@ -663,12 +618,14 @@ abstract class NetworkException implements CustomException {
   const factory NetworkException() = _$NetworkException;
 }
 
+/// @nodoc
 abstract class $NotFoundExceptionCopyWith<$Res> {
   factory $NotFoundExceptionCopyWith(
           NotFoundException value, $Res Function(NotFoundException) then) =
       _$NotFoundExceptionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NotFoundExceptionCopyWithImpl<$Res>
     extends _$CustomExceptionCopyWithImpl<$Res>
     implements $NotFoundExceptionCopyWith<$Res> {
@@ -680,6 +637,7 @@ class _$NotFoundExceptionCopyWithImpl<$Res>
   NotFoundException get _value => super._value as NotFoundException;
 }
 
+/// @nodoc
 class _$NotFoundException implements NotFoundException {
   const _$NotFoundException();
 
@@ -698,35 +656,28 @@ class _$NotFoundException implements NotFoundException {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverException(),
-    @required Result cacheException(),
-    @required Result conflictException(),
-    @required Result invalidInputException(),
-    @required Result networkException(),
-    @required Result notFoundException(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverException,
+    required TResult Function() cacheException,
+    required TResult Function() conflictException,
+    required TResult Function() invalidInputException,
+    required TResult Function() networkException,
+    required TResult Function() notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return notFoundException();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverException(),
-    Result cacheException(),
-    Result conflictException(),
-    Result invalidInputException(),
-    Result networkException(),
-    Result notFoundException(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverException,
+    TResult Function()? cacheException,
+    TResult Function()? conflictException,
+    TResult Function()? invalidInputException,
+    TResult Function()? networkException,
+    TResult Function()? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (notFoundException != null) {
       return notFoundException();
     }
@@ -735,35 +686,29 @@ class _$NotFoundException implements NotFoundException {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverException(ServerException value),
-    @required Result cacheException(CacheException value),
-    @required Result conflictException(ConflitctException value),
-    @required Result invalidInputException(InvalidInputException value),
-    @required Result networkException(NetworkException value),
-    @required Result notFoundException(NotFoundException value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerException value) serverException,
+    required TResult Function(CacheException value) cacheException,
+    required TResult Function(ConflitctException value) conflictException,
+    required TResult Function(InvalidInputException value)
+        invalidInputException,
+    required TResult Function(NetworkException value) networkException,
+    required TResult Function(NotFoundException value) notFoundException,
   }) {
-    assert(serverException != null);
-    assert(cacheException != null);
-    assert(conflictException != null);
-    assert(invalidInputException != null);
-    assert(networkException != null);
-    assert(notFoundException != null);
     return notFoundException(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverException(ServerException value),
-    Result cacheException(CacheException value),
-    Result conflictException(ConflitctException value),
-    Result invalidInputException(InvalidInputException value),
-    Result networkException(NetworkException value),
-    Result notFoundException(NotFoundException value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerException value)? serverException,
+    TResult Function(CacheException value)? cacheException,
+    TResult Function(ConflitctException value)? conflictException,
+    TResult Function(InvalidInputException value)? invalidInputException,
+    TResult Function(NetworkException value)? networkException,
+    TResult Function(NotFoundException value)? notFoundException,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (notFoundException != null) {
       return notFoundException(this);
     }

@@ -3,13 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeCard extends StatelessWidget {
-  final String title;
-  final String episode;
-  final String image;
-  final Function onTap;
+  final String? title;
+  final String? episode;
+  final String? image;
+  final VoidCallback? onTap;
 
-  const HomeCard({Key key, this.title, this.episode, this.image, this.onTap})
-      : super(key: key);
+  HomeCard({Key? key, this.title, this.episode, this.image, this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class HomeCard extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(16),
               child: Image.network(
-                image,
+                image!,
                 height: 198,
                 width: 142,
                 fit: BoxFit.fill,
@@ -36,7 +35,7 @@ class HomeCard extends StatelessWidget {
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                title,
+                title!,
                 style: GoogleFonts.alegreyaSansSc(color: AppColors.lightest),
               ),
             ),

@@ -8,14 +8,13 @@ enum HomeScreenStatus {
 
 class HomeScreenState extends Equatable {
   final HomeScreenStatus status;
-  final List<GetTopAnimesModel> getAnimes;
-  final String messageError;
+  final List<GetAnimesModel> getAnimes;
+  final String? messageError;
 
-  HomeScreenState._(
-      this.status, this.getAnimes, this.messageError);
+  HomeScreenState._(this.status, this.getAnimes, this.messageError);
 
   @override
-  List<Object> get props => [
+  List<Object?> get props => [
         status,
         getAnimes,
         messageError,
@@ -25,7 +24,8 @@ class HomeScreenState extends Equatable {
 
   HomeScreenState loading() => HomeScreenState._(HomeScreenStatus.loading, getAnimes, messageError);
 
-  HomeScreenState ready(List<GetTopAnimesModel> getAnimes) => HomeScreenState._(HomeScreenStatus.ready, getAnimes, messageError);
+  HomeScreenState ready(List<GetAnimesModel> getAnimes) =>
+      HomeScreenState._(HomeScreenStatus.ready, getAnimes, messageError);
 
   HomeScreenState error(String msgError) => HomeScreenState._(HomeScreenStatus.error, getAnimes, msgError);
 }

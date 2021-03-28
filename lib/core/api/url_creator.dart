@@ -15,17 +15,17 @@ class UrlCreator implements IUrlCreator {
 
   @override
   String create({
-    String endpoint,
-    Map<String, dynamic> queryParameters,
-    List<String> pathSegments,
+    String? endpoint,
+    Map<String, dynamic>? queryParameters,
+    List<String>? pathSegments,
     String scheme = 'https',
-    int port,
+    int? port,
   }) {
     return Uri(
             scheme: scheme,
             host: _urlKey,
             port: port,
-            pathSegments: [...endpoint.split('/'), ...(pathSegments ?? [])],
+            pathSegments: [...endpoint!.split('/'), ...(pathSegments ?? [])],
             queryParameters: queryParameters != null ? queryParameters : null)
         .toString();
   }

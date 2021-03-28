@@ -1,5 +1,5 @@
 import 'package:appanime/core/utils/app_colors.dart';
-import 'package:appanime/features/home_screen/data/models/get_top_animes.dart';
+import 'package:appanime/features/home_screen/data/models/get_animes_model.dart';
 import 'package:appanime/features/home_screen/presentation/bloc/home_screen_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -13,9 +13,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<HomeScreenBloc, HomeScreenState>(
-        // o uso de blocBuilder é pelo fato que não teremos uma reconstrução da tela, apesar de usar uma stateful, então ele builda o bloc uma vez e acabou
-        builder: (context, state) {
+    return BlocBuilder<HomeScreenBloc, HomeScreenState>(builder: (context, state) {
       return Scaffold(
         backgroundColor: AppColors.lightest,
         body: _homeScreenBuilder(state),
@@ -25,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _homeScreenBuilder(HomeScreenState state) {
     switch (state.status) {
-      // Esse switch serve para os possiveis casos de status, o de loading não é necessario ser passado, ele pode ficar como default no momento
       case HomeScreenStatus.ready:
         return _homeScreen(context, state.getAnimes);
       default:
@@ -37,8 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  Widget _homeScreen(
-      BuildContext context, List<GetTopAnimesModel> getTopAnimes) {
+  Widget _homeScreen(BuildContext context, List<GetAnimesModel> getTopAnimes) {
     return SafeArea(
       child: Column(
         children: [
@@ -50,16 +46,14 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 Text(
                   'Lançamentos',
-                  style:
-                      GoogleFonts.abel(fontSize: 20, color: AppColors.lightest),
+                  style: GoogleFonts.abel(fontSize: 20, color: AppColors.lightest),
                 ),
                 Align(
                   alignment: Alignment.bottomRight,
                   child: Text(
                     'Ver mais',
                     textAlign: TextAlign.end,
-                    style: GoogleFonts.abel(
-                        fontSize: 16, color: AppColors.lightest),
+                    style: GoogleFonts.abel(fontSize: 16, color: AppColors.lightest),
                   ),
                 ),
               ],

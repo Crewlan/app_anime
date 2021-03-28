@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'failures.dart';
 
@@ -7,83 +7,88 @@ part of 'failures.dart';
 // FreezedGenerator
 // **************************************************************************
 
-// ignore: unused_element
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
 class _$FailureTearOff {
   const _$FailureTearOff();
 
-// ignore: unused_element
   ServerFailure serverFailure() {
     return const ServerFailure();
   }
 
-// ignore: unused_element
   CacheFailure cacheFailure() {
     return const CacheFailure();
   }
 
-// ignore: unused_element
   NetworkFailure networkFailure() {
     return const NetworkFailure();
   }
 
-// ignore: unused_element
   InvalidInputFailure invalidInputFailure() {
     return const InvalidInputFailure();
   }
 
-// ignore: unused_element
   ConflictFailure conflictFailure() {
     return const ConflictFailure();
   }
 }
 
-// ignore: unused_element
+/// @nodoc
 const $Failure = _$FailureTearOff();
 
+/// @nodoc
 mixin _$Failure {
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverFailure(),
-    @required Result cacheFailure(),
-    @required Result networkFailure(),
-    @required Result invalidInputFailure(),
-    @required Result conflictFailure(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() invalidInputFailure,
+    required TResult Function() conflictFailure,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverFailure(),
-    Result cacheFailure(),
-    Result networkFailure(),
-    Result invalidInputFailure(),
-    Result conflictFailure(),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? cacheFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? invalidInputFailure,
+    TResult Function()? conflictFailure,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverFailure(ServerFailure value),
-    @required Result cacheFailure(CacheFailure value),
-    @required Result networkFailure(NetworkFailure value),
-    @required Result invalidInputFailure(InvalidInputFailure value),
-    @required Result conflictFailure(ConflictFailure value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerFailure value) serverFailure,
+    required TResult Function(CacheFailure value) cacheFailure,
+    required TResult Function(NetworkFailure value) networkFailure,
+    required TResult Function(InvalidInputFailure value) invalidInputFailure,
+    required TResult Function(ConflictFailure value) conflictFailure,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverFailure(ServerFailure value),
-    Result cacheFailure(CacheFailure value),
-    Result networkFailure(NetworkFailure value),
-    Result invalidInputFailure(InvalidInputFailure value),
-    Result conflictFailure(ConflictFailure value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerFailure value)? serverFailure,
+    TResult Function(CacheFailure value)? cacheFailure,
+    TResult Function(NetworkFailure value)? networkFailure,
+    TResult Function(InvalidInputFailure value)? invalidInputFailure,
+    TResult Function(ConflictFailure value)? conflictFailure,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
+/// @nodoc
 abstract class $FailureCopyWith<$Res> {
   factory $FailureCopyWith(Failure value, $Res Function(Failure) then) =
       _$FailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$FailureCopyWithImpl<$Res> implements $FailureCopyWith<$Res> {
   _$FailureCopyWithImpl(this._value, this._then);
 
@@ -92,12 +97,14 @@ class _$FailureCopyWithImpl<$Res> implements $FailureCopyWith<$Res> {
   final $Res Function(Failure) _then;
 }
 
+/// @nodoc
 abstract class $ServerFailureCopyWith<$Res> {
   factory $ServerFailureCopyWith(
           ServerFailure value, $Res Function(ServerFailure) then) =
       _$ServerFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ServerFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
     implements $ServerFailureCopyWith<$Res> {
   _$ServerFailureCopyWithImpl(
@@ -108,6 +115,7 @@ class _$ServerFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
   ServerFailure get _value => super._value as ServerFailure;
 }
 
+/// @nodoc
 class _$ServerFailure implements ServerFailure {
   const _$ServerFailure();
 
@@ -126,32 +134,26 @@ class _$ServerFailure implements ServerFailure {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverFailure(),
-    @required Result cacheFailure(),
-    @required Result networkFailure(),
-    @required Result invalidInputFailure(),
-    @required Result conflictFailure(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() invalidInputFailure,
+    required TResult Function() conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return serverFailure();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverFailure(),
-    Result cacheFailure(),
-    Result networkFailure(),
-    Result invalidInputFailure(),
-    Result conflictFailure(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? cacheFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? invalidInputFailure,
+    TResult Function()? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (serverFailure != null) {
       return serverFailure();
     }
@@ -160,32 +162,26 @@ class _$ServerFailure implements ServerFailure {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverFailure(ServerFailure value),
-    @required Result cacheFailure(CacheFailure value),
-    @required Result networkFailure(NetworkFailure value),
-    @required Result invalidInputFailure(InvalidInputFailure value),
-    @required Result conflictFailure(ConflictFailure value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerFailure value) serverFailure,
+    required TResult Function(CacheFailure value) cacheFailure,
+    required TResult Function(NetworkFailure value) networkFailure,
+    required TResult Function(InvalidInputFailure value) invalidInputFailure,
+    required TResult Function(ConflictFailure value) conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return serverFailure(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverFailure(ServerFailure value),
-    Result cacheFailure(CacheFailure value),
-    Result networkFailure(NetworkFailure value),
-    Result invalidInputFailure(InvalidInputFailure value),
-    Result conflictFailure(ConflictFailure value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerFailure value)? serverFailure,
+    TResult Function(CacheFailure value)? cacheFailure,
+    TResult Function(NetworkFailure value)? networkFailure,
+    TResult Function(InvalidInputFailure value)? invalidInputFailure,
+    TResult Function(ConflictFailure value)? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (serverFailure != null) {
       return serverFailure(this);
     }
@@ -197,12 +193,14 @@ abstract class ServerFailure implements Failure {
   const factory ServerFailure() = _$ServerFailure;
 }
 
+/// @nodoc
 abstract class $CacheFailureCopyWith<$Res> {
   factory $CacheFailureCopyWith(
           CacheFailure value, $Res Function(CacheFailure) then) =
       _$CacheFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$CacheFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
     implements $CacheFailureCopyWith<$Res> {
   _$CacheFailureCopyWithImpl(
@@ -213,6 +211,7 @@ class _$CacheFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
   CacheFailure get _value => super._value as CacheFailure;
 }
 
+/// @nodoc
 class _$CacheFailure implements CacheFailure {
   const _$CacheFailure();
 
@@ -231,32 +230,26 @@ class _$CacheFailure implements CacheFailure {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverFailure(),
-    @required Result cacheFailure(),
-    @required Result networkFailure(),
-    @required Result invalidInputFailure(),
-    @required Result conflictFailure(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() invalidInputFailure,
+    required TResult Function() conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return cacheFailure();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverFailure(),
-    Result cacheFailure(),
-    Result networkFailure(),
-    Result invalidInputFailure(),
-    Result conflictFailure(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? cacheFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? invalidInputFailure,
+    TResult Function()? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (cacheFailure != null) {
       return cacheFailure();
     }
@@ -265,32 +258,26 @@ class _$CacheFailure implements CacheFailure {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverFailure(ServerFailure value),
-    @required Result cacheFailure(CacheFailure value),
-    @required Result networkFailure(NetworkFailure value),
-    @required Result invalidInputFailure(InvalidInputFailure value),
-    @required Result conflictFailure(ConflictFailure value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerFailure value) serverFailure,
+    required TResult Function(CacheFailure value) cacheFailure,
+    required TResult Function(NetworkFailure value) networkFailure,
+    required TResult Function(InvalidInputFailure value) invalidInputFailure,
+    required TResult Function(ConflictFailure value) conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return cacheFailure(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverFailure(ServerFailure value),
-    Result cacheFailure(CacheFailure value),
-    Result networkFailure(NetworkFailure value),
-    Result invalidInputFailure(InvalidInputFailure value),
-    Result conflictFailure(ConflictFailure value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerFailure value)? serverFailure,
+    TResult Function(CacheFailure value)? cacheFailure,
+    TResult Function(NetworkFailure value)? networkFailure,
+    TResult Function(InvalidInputFailure value)? invalidInputFailure,
+    TResult Function(ConflictFailure value)? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (cacheFailure != null) {
       return cacheFailure(this);
     }
@@ -302,12 +289,14 @@ abstract class CacheFailure implements Failure {
   const factory CacheFailure() = _$CacheFailure;
 }
 
+/// @nodoc
 abstract class $NetworkFailureCopyWith<$Res> {
   factory $NetworkFailureCopyWith(
           NetworkFailure value, $Res Function(NetworkFailure) then) =
       _$NetworkFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$NetworkFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
     implements $NetworkFailureCopyWith<$Res> {
   _$NetworkFailureCopyWithImpl(
@@ -318,6 +307,7 @@ class _$NetworkFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
   NetworkFailure get _value => super._value as NetworkFailure;
 }
 
+/// @nodoc
 class _$NetworkFailure implements NetworkFailure {
   const _$NetworkFailure();
 
@@ -336,32 +326,26 @@ class _$NetworkFailure implements NetworkFailure {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverFailure(),
-    @required Result cacheFailure(),
-    @required Result networkFailure(),
-    @required Result invalidInputFailure(),
-    @required Result conflictFailure(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() invalidInputFailure,
+    required TResult Function() conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return networkFailure();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverFailure(),
-    Result cacheFailure(),
-    Result networkFailure(),
-    Result invalidInputFailure(),
-    Result conflictFailure(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? cacheFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? invalidInputFailure,
+    TResult Function()? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (networkFailure != null) {
       return networkFailure();
     }
@@ -370,32 +354,26 @@ class _$NetworkFailure implements NetworkFailure {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverFailure(ServerFailure value),
-    @required Result cacheFailure(CacheFailure value),
-    @required Result networkFailure(NetworkFailure value),
-    @required Result invalidInputFailure(InvalidInputFailure value),
-    @required Result conflictFailure(ConflictFailure value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerFailure value) serverFailure,
+    required TResult Function(CacheFailure value) cacheFailure,
+    required TResult Function(NetworkFailure value) networkFailure,
+    required TResult Function(InvalidInputFailure value) invalidInputFailure,
+    required TResult Function(ConflictFailure value) conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return networkFailure(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverFailure(ServerFailure value),
-    Result cacheFailure(CacheFailure value),
-    Result networkFailure(NetworkFailure value),
-    Result invalidInputFailure(InvalidInputFailure value),
-    Result conflictFailure(ConflictFailure value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerFailure value)? serverFailure,
+    TResult Function(CacheFailure value)? cacheFailure,
+    TResult Function(NetworkFailure value)? networkFailure,
+    TResult Function(InvalidInputFailure value)? invalidInputFailure,
+    TResult Function(ConflictFailure value)? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (networkFailure != null) {
       return networkFailure(this);
     }
@@ -407,12 +385,14 @@ abstract class NetworkFailure implements Failure {
   const factory NetworkFailure() = _$NetworkFailure;
 }
 
+/// @nodoc
 abstract class $InvalidInputFailureCopyWith<$Res> {
   factory $InvalidInputFailureCopyWith(
           InvalidInputFailure value, $Res Function(InvalidInputFailure) then) =
       _$InvalidInputFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InvalidInputFailureCopyWithImpl<$Res>
     extends _$FailureCopyWithImpl<$Res>
     implements $InvalidInputFailureCopyWith<$Res> {
@@ -424,6 +404,7 @@ class _$InvalidInputFailureCopyWithImpl<$Res>
   InvalidInputFailure get _value => super._value as InvalidInputFailure;
 }
 
+/// @nodoc
 class _$InvalidInputFailure implements InvalidInputFailure {
   const _$InvalidInputFailure();
 
@@ -442,32 +423,26 @@ class _$InvalidInputFailure implements InvalidInputFailure {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverFailure(),
-    @required Result cacheFailure(),
-    @required Result networkFailure(),
-    @required Result invalidInputFailure(),
-    @required Result conflictFailure(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() invalidInputFailure,
+    required TResult Function() conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return invalidInputFailure();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverFailure(),
-    Result cacheFailure(),
-    Result networkFailure(),
-    Result invalidInputFailure(),
-    Result conflictFailure(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? cacheFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? invalidInputFailure,
+    TResult Function()? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (invalidInputFailure != null) {
       return invalidInputFailure();
     }
@@ -476,32 +451,26 @@ class _$InvalidInputFailure implements InvalidInputFailure {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverFailure(ServerFailure value),
-    @required Result cacheFailure(CacheFailure value),
-    @required Result networkFailure(NetworkFailure value),
-    @required Result invalidInputFailure(InvalidInputFailure value),
-    @required Result conflictFailure(ConflictFailure value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerFailure value) serverFailure,
+    required TResult Function(CacheFailure value) cacheFailure,
+    required TResult Function(NetworkFailure value) networkFailure,
+    required TResult Function(InvalidInputFailure value) invalidInputFailure,
+    required TResult Function(ConflictFailure value) conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return invalidInputFailure(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverFailure(ServerFailure value),
-    Result cacheFailure(CacheFailure value),
-    Result networkFailure(NetworkFailure value),
-    Result invalidInputFailure(InvalidInputFailure value),
-    Result conflictFailure(ConflictFailure value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerFailure value)? serverFailure,
+    TResult Function(CacheFailure value)? cacheFailure,
+    TResult Function(NetworkFailure value)? networkFailure,
+    TResult Function(InvalidInputFailure value)? invalidInputFailure,
+    TResult Function(ConflictFailure value)? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (invalidInputFailure != null) {
       return invalidInputFailure(this);
     }
@@ -513,12 +482,14 @@ abstract class InvalidInputFailure implements Failure {
   const factory InvalidInputFailure() = _$InvalidInputFailure;
 }
 
+/// @nodoc
 abstract class $ConflictFailureCopyWith<$Res> {
   factory $ConflictFailureCopyWith(
           ConflictFailure value, $Res Function(ConflictFailure) then) =
       _$ConflictFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ConflictFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
     implements $ConflictFailureCopyWith<$Res> {
   _$ConflictFailureCopyWithImpl(
@@ -529,6 +500,7 @@ class _$ConflictFailureCopyWithImpl<$Res> extends _$FailureCopyWithImpl<$Res>
   ConflictFailure get _value => super._value as ConflictFailure;
 }
 
+/// @nodoc
 class _$ConflictFailure implements ConflictFailure {
   const _$ConflictFailure();
 
@@ -547,32 +519,26 @@ class _$ConflictFailure implements ConflictFailure {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result serverFailure(),
-    @required Result cacheFailure(),
-    @required Result networkFailure(),
-    @required Result invalidInputFailure(),
-    @required Result conflictFailure(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() invalidInputFailure,
+    required TResult Function() conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return conflictFailure();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result serverFailure(),
-    Result cacheFailure(),
-    Result networkFailure(),
-    Result invalidInputFailure(),
-    Result conflictFailure(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? cacheFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? invalidInputFailure,
+    TResult Function()? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (conflictFailure != null) {
       return conflictFailure();
     }
@@ -581,32 +547,26 @@ class _$ConflictFailure implements ConflictFailure {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result serverFailure(ServerFailure value),
-    @required Result cacheFailure(CacheFailure value),
-    @required Result networkFailure(NetworkFailure value),
-    @required Result invalidInputFailure(InvalidInputFailure value),
-    @required Result conflictFailure(ConflictFailure value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(ServerFailure value) serverFailure,
+    required TResult Function(CacheFailure value) cacheFailure,
+    required TResult Function(NetworkFailure value) networkFailure,
+    required TResult Function(InvalidInputFailure value) invalidInputFailure,
+    required TResult Function(ConflictFailure value) conflictFailure,
   }) {
-    assert(serverFailure != null);
-    assert(cacheFailure != null);
-    assert(networkFailure != null);
-    assert(invalidInputFailure != null);
-    assert(conflictFailure != null);
     return conflictFailure(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result serverFailure(ServerFailure value),
-    Result cacheFailure(CacheFailure value),
-    Result networkFailure(NetworkFailure value),
-    Result invalidInputFailure(InvalidInputFailure value),
-    Result conflictFailure(ConflictFailure value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(ServerFailure value)? serverFailure,
+    TResult Function(CacheFailure value)? cacheFailure,
+    TResult Function(NetworkFailure value)? networkFailure,
+    TResult Function(InvalidInputFailure value)? invalidInputFailure,
+    TResult Function(ConflictFailure value)? conflictFailure,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (conflictFailure != null) {
       return conflictFailure(this);
     }
