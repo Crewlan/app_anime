@@ -1,12 +1,11 @@
+import 'package:appanime/features/home_screen/data/models/episodes_model.dart';
 import 'package:equatable/equatable.dart';
-
-import 'list_episodes_model.dart';
 
 class GetAnimesModel extends Equatable {
   final String? animeTitle;
   final String? image;
   final String? description;
-  final List<ListEpisodesModel>? listEpisodesModel;
+  final List<EpisodesModel>? listEpisodesModel;
 
   GetAnimesModel({
     this.animeTitle,
@@ -27,6 +26,6 @@ class GetAnimesModel extends Equatable {
         animeTitle: json['animeTitle'],
         image: json['image'],
         description: json['description'],
-        listEpisodesModel: (json['listEpisodes'] as List).map((e) => ListEpisodesModel.fromJson(e)).toList(),
+        listEpisodesModel: (json['listEpisodes'] as List).map((e) => EpisodesModel.fromJson(e)).toList(),
       );
 }

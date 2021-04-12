@@ -3,9 +3,9 @@ import 'package:equatable/equatable.dart';
 import 'episodes_model.dart';
 
 class ListEpisodesModel extends Equatable {
-  final EpisodesModel? episodesModel;
+  final EpisodesModel episodesModel;
 
-  ListEpisodesModel({this.episodesModel});
+  ListEpisodesModel({required this.episodesModel});
 
   @override
   List<Object?> get props {
