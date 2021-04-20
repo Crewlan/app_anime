@@ -42,7 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: [
           homeHeader(),
-          homeBody(),
+          SizedBox(
+            height: 32,
+          ),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(24),
@@ -52,32 +54,33 @@ class _HomeScreenState extends State<HomeScreen> {
             width: 387,
           ),
           SizedBox(
-            height: 10,
+            height: 32,
+          ),
+          homeBody(),
+          SizedBox(
+            height: 32,
           ),
           Row(
             children: [
-              HomeCard(
-                animeTitle: 'One Piece',
-                animeEpisode: '986',
-                image: 'https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_1xby.jpg',
-                onTap: () {},
-              )
-
-              /*     Expanded(
+              Expanded(
                 child: Container(
                   height: 310,
                   width: MediaQuery.of(context).size.width,
                   child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 1,
-                    itemBuilder: (context, index) {
-                      return Container(
-                          //TODO: RETORNAR HOME CARD E NO ITEM COUNT FAZER ELE PUXAR DE UM DATASORCE E MODELS ETC BLA BLA BLA :D
-                          );
+                    scrollDirection: Axis.vertical,
+                    itemCount: getTopAnimes.length,
+                    itemBuilder: (context, position) {
+                      var anime = getTopAnimes[position];
+                      return HomeCard(
+                        animeTitle: anime.animeTitle,
+                        animeEpisode: anime.description,
+                        image: anime.image,
+                        onTap: () {},
+                      );
                     },
                   ),
                 ),
-              ),*/
+              ),
             ],
           ),
         ],
@@ -100,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Container(
-            height: 150,
+            width: MediaQuery.of(context).size.width / 2,
             child: TextFormField(
               decoration: InputDecoration(
                 hintText: AppStrings.homeAnimeSearchHint,
