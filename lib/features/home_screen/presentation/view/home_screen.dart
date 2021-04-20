@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return BlocBuilder<HomeScreenBloc, HomeScreenState>(builder: (context, state) {
       return Scaffold(
+        resizeToAvoidBottomInset: false,
         backgroundColor: AppColors.purpleLetter,
         body: _homeScreenBuilder(state),
       );
@@ -46,6 +47,9 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 32,
           ),
           Container(
+            margin: EdgeInsets.symmetric(
+              horizontal: 32,
+            ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(24),
               color: AppColors.purpleTest,
@@ -64,16 +68,19 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: Container(
+                  padding: EdgeInsets.only(
+                    right: 32,
+                  ),
                   height: 310,
                   width: MediaQuery.of(context).size.width,
                   child: ListView.builder(
-                    scrollDirection: Axis.vertical,
+                    scrollDirection: Axis.horizontal,
                     itemCount: getTopAnimes.length,
                     itemBuilder: (context, position) {
                       var anime = getTopAnimes[position];
                       return HomeCard(
                         animeTitle: anime.animeTitle,
-                        animeEpisode: anime.description,
+                        animeEpisode: anime.listEpisodesModel!.last.titleEpisode,
                         image: anime.image,
                         onTap: () {},
                       );
@@ -100,13 +107,30 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Icon(
               MdiIcons.cog,
               size: 24,
+              color: AppColors.purpleTest,
             ),
           ),
           Container(
             width: MediaQuery.of(context).size.width / 2,
             child: TextFormField(
+              style: GoogleFonts.roboto(
+                color: AppColors.purpleTest,
+              ),
+              cursorColor: AppColors.purpleTest,
               decoration: InputDecoration(
                 hintText: AppStrings.homeAnimeSearchHint,
+                focusColor: AppColors.purpleTest,
+                hintStyle: GoogleFonts.roboto(
+                  color: AppColors.purpleTest,
+                ),
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: AppColors.purpleTest),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                    color: AppColors.purpleTest,
+                  ),
+                ),
               ),
             ),
           ),
@@ -115,8 +139,9 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Icon(
               MdiIcons.heart,
               size: 24,
+              color: AppColors.purpleTest,
             ),
-          )
+          ),
         ],
       ),
     );
