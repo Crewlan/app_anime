@@ -6,6 +6,6 @@ class AppStrings {
   static const appAnimeErrorServer = 'Erro ao conectar ao servidor';
   static const appAnimeError = 'Reinicie o Aplicativo';
   static const homeAnimeSearchHint = 'Pesquise aqui seus animes';
-  static const homeAnimeMore = 'Ver mais...';
+  static const homeAnimeMore = 'Ver mais';
   static const homeAnimeNew = 'Lançamentos';
 }

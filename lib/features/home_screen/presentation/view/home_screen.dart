@@ -43,9 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: [
           homeHeader(),
-          SizedBox(
-            height: 32,
-          ),
+          SizedBox(height: 32),
           Container(
             margin: EdgeInsets.symmetric(
               horizontal: 32,
@@ -57,13 +55,9 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 2,
             width: 387,
           ),
-          SizedBox(
-            height: 32,
-          ),
+          SizedBox(height: 32),
           homeBody(),
-          SizedBox(
-            height: 32,
-          ),
+          SizedBox(height: 32),
           Row(
             children: [
               Expanded(
