@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeCard extends StatelessWidget {
-  final String? title;
-  final String? episode;
+  final String? animeTitle;
+  final String? animeEpisode;
   final String? image;
   final VoidCallback? onTap;
 
-  HomeCard({Key? key, this.title, this.episode, this.image, this.onTap}) : super(key: key);
+  HomeCard({Key? key, this.animeTitle, this.animeEpisode, this.image, this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +35,12 @@ class HomeCard extends StatelessWidget {
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                title!,
-                style: GoogleFonts.alegreyaSansSc(color: AppColors.lightest),
+                animeTitle!,
+                style: GoogleFonts.abel(
+                  color: AppColors.purpleLight,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w400,
+                ),
               ),
             ),
             SizedBox(
@@ -45,8 +49,12 @@ class HomeCard extends StatelessWidget {
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
-                'Episodio: $episode',
-                style: GoogleFonts.alegreyaSansSc(color: AppColors.lightest),
+                'Episodio: $animeEpisode',
+                style: GoogleFonts.abel(
+                  color: AppColors.purpleLight,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w400,
+                ),
               ),
             ),
           ],

@@ -6,6 +6,7 @@ class EpisodesModel extends Equatable {
   final String? linkHd;
   final String? downloadSd;
   final String? downloadHd;
+  final String? titleEpisode;
 
   EpisodesModel({
     this.id,
@@ -13,6 +14,7 @@ class EpisodesModel extends Equatable {
     this.linkHd,
     this.downloadSd,
     this.downloadHd,
+    this.titleEpisode,
   });
 
   @override
@@ -23,6 +25,7 @@ class EpisodesModel extends Equatable {
       linkHd,
       downloadSd,
       downloadHd,
+      titleEpisode,
     ];
   }
 
@@ -32,5 +35,6 @@ class EpisodesModel extends Equatable {
         linkHd: json['linkHd'],
         downloadSd: json['downloadSd'],
         downloadHd: json['downloadHd'],
+        titleEpisode: json['titleEpisode'],
       );
 }

@@ -1,10 +1,10 @@
-import 'package:appanime/core/navigations/routes.dart';
-import 'package:appanime/features/home_screen/presentation/bloc/home_screen_bloc.dart';
-import 'package:appanime/features/home_screen/presentation/pages/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../features/home_screen/presentation/bloc/home_screen_bloc.dart';
+import '../../features/home_screen/presentation/view/home_screen.dart';
 import '../../injection_container.dart';
+import 'routes.dart';
 
 class AppRouter {
   final _homeBloc = sl<HomeScreenBloc>();
@@ -20,7 +20,10 @@ class AppRouter {
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
-            body:SafeArea(child: Center(child:  Text('Erro!'),)),
+            body: SafeArea(
+                child: Center(
+              child: Text('Erro!'),
+            )),
           ),
         );
     }
