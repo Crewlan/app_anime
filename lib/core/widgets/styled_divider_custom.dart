@@ -6,14 +6,13 @@ class StyledDividerCustom extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(
-        horizontal: 32,
+        horizontal: 15,
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
         color: AppColors.purpleTest,
       ),
       height: 2,
-      width: 387,
     );
   }
 }
