@@ -2,7 +2,6 @@ import 'package:appanime/core/utils/app_colors.dart';
 import 'package:appanime/core/utils/app_strings.dart';
 import 'package:appanime/core/widgets/styled_button.dart';
 import 'package:appanime/core/widgets/styled_divider_custom.dart';
-import 'package:appanime/features/home_screen/data/models/episodes_model.dart';
 import 'package:appanime/features/home_screen/data/models/get_animes_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +20,6 @@ class AnimeDetailScreen extends StatefulWidget {
 
 class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
   final GetAnimesModel getAnimesModel;
-  int indexValue = 0;
 
   _AnimeDetailScreenState(this.getAnimesModel);
 
@@ -93,29 +91,64 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                             ),
                             StyledDividerCustom(),
                             SizedBox(
-                              height: 8,
-                            ),
-                            Container(
-                              child: CupertinoSegmentedControl(
-                                children: selectorSegmented,
-                                onValueChanged: (int value) {
-                                  setState(
-                                    () {
-                                      indexValue = value;
-                                    },
-                                  );
-                                },
-                                groupValue: indexValue,
-                                selectedColor: AppColors.purpleSelected,
-                                unselectedColor: AppColors.purpleunSelected,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20,
+                              height: 4,
                             ),
                             Container(
                               margin: EdgeInsets.symmetric(horizontal: 15),
-                              child: screens[indexValue],
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () {
+                                      //Navigator.of(context).push(MaterialPageRoute(builder: (_) => AnimeListEpisodesScreen()));
+                                    },
+                                    child: Icon(MdiIcons.file),
+                                  ),
+                                  SizedBox(width: 25),
+                                  GestureDetector(
+                                    onTap: () {
+                                       //Navigator.of(context).push(MaterialPageRoute(builder: (_) => AnimeInformationsScreen()));
+                                    },
+                                    child: Icon(MdiIcons.informationOutline),
+                                    //TODO: Adicionar cores e tamanho certos nos dois botoes
+                                  )
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 24),
+                            Container(
+                              margin: EdgeInsets.symmetric(horizontal: 15),
+                              child: Column(
+                                children: [
+                                  StyledButton(
+                                    titleButton: AppStrings.appWatchSD,
+                                    onTap: () {},
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  StyledButton(
+                                    titleButton: AppStrings.appWatchHD,
+                                    onTap: () {},
+                                  ),
+                                  SizedBox(height: 10),
+                                  StyledDividerCustom(),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  StyledButton(
+                                    titleButton: AppStrings.appDownloadSD,
+                                    onTap: () {},
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  StyledButton(
+                                    titleButton: AppStrings.appDownloadHD,
+                                    onTap: () {},
+                                  ),
+                                ],
+                              ),
                             ),
                             SizedBox(height: 26),
                           ],
@@ -141,56 +174,4 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
       ),
     );
   }
-
-   Map<int, Widget> selectorSegmented = {
-    0: Text(AppStrings.appWatch),
-    1: Text(AppStrings.appAnimeEpisodeList),
-    2: Text(AppStrings.appAnimeDetails),
-  };
-
-  Map<int, Widget> screens = {
-    0: Column(
-      children: [
-        StyledButton(
-          titleButton: AppStrings.appWatchSD,
-          onTap: () {},
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        StyledButton(
-          titleButton: AppStrings.appWatchHD,
-          onTap: () {},
-        ),
-        SizedBox(height: 10),
-        StyledDividerCustom(),
-        SizedBox(
-          height: 10,
-        ),
-        StyledButton(
-          titleButton: AppStrings.appDownloadSD,
-          onTap: () {},
-        ),
-        SizedBox(
-          height: 10,
-        ),
-        StyledButton(
-          titleButton: AppStrings.appDownloadHD,
-          onTap: () {},
-        ),
-      ],
-    ),
-    1: Container(
-      decoration: BoxDecoration(
-        border: Border.all(color: AppColors.lightClean),
-        borderRadius: BorderRadius.all(Radius.circular(24)),
-      ),
-      child: ListView.builder(
-       itemCount: getAnimesModel.listEpisodesModel!.length
-
-      ),),
-    2: Text("Tela 3"),
-  };
-
- 
 }
