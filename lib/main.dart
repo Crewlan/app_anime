@@ -36,12 +36,12 @@ class _AppState extends State<App> {
       themeMode: ThemeMode.light,
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.purpleLetter,
-        primaryColor: AppColors.lightest,
+        primaryColor: AppColors.lightTest,
         appBarTheme: AppBarTheme(brightness: Brightness.light),
         primaryColorBrightness: Brightness.light,
         cupertinoOverrideTheme: CupertinoThemeData(
-          primaryColor: AppColors.lightest,
-          scaffoldBackgroundColor: AppColors.lightest,
+          primaryColor: AppColors.lightTest,
+          scaffoldBackgroundColor: AppColors.lightTest,
           brightness: Brightness.light,
         ),
         brightness: Brightness.light,
@@ -51,8 +51,8 @@ class _AppState extends State<App> {
         appBarTheme: AppBarTheme(brightness: Brightness.light),
         primaryColorBrightness: Brightness.light,
         cupertinoOverrideTheme: CupertinoThemeData(
-            primaryColor: AppColors.lightest,
-            scaffoldBackgroundColor: AppColors.lightest,
+            primaryColor: AppColors.lightTest,
+            scaffoldBackgroundColor: AppColors.lightTest,
             brightness: Brightness.light),
         brightness: Brightness.light,
       ),

@@ -121,14 +121,14 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Text(
                 AppStrings.homeAnimeNew,
-                style: GoogleFonts.abel(fontSize: 20, color: AppColors.lightest),
+                style: GoogleFonts.abel(fontSize: 20, color: AppColors.lightTest),
               ),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Text(
                   AppStrings.homeAnimeMore,
                   textAlign: TextAlign.end,
-                  style: GoogleFonts.abel(fontSize: 16, color: AppColors.lightest),
+                  style: GoogleFonts.abel(fontSize: 16, color: AppColors.lightTest),
                 ),
               ),
             ],
@@ -184,14 +184,14 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Text(
                 AppStrings.homeAnimeMoreView,
-                style: GoogleFonts.abel(fontSize: 20, color: AppColors.lightest),
+                style: GoogleFonts.abel(fontSize: 20, color: AppColors.lightTest),
               ),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Text(
                   AppStrings.homeAnimeMore,
                   textAlign: TextAlign.end,
-                  style: GoogleFonts.abel(fontSize: 16, color: AppColors.lightest),
+                  style: GoogleFonts.abel(fontSize: 16, color: AppColors.lightTest),
                 ),
               ),
             ],

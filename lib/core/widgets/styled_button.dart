@@ -26,7 +26,7 @@ class StyledButton extends StatelessWidget {
                 titleButton!,
                 style: GoogleFonts.robotoMono(
                   fontSize: 16,
-                  color: AppColors.lightest
+                  color: AppColors.lightTest
                 ),
               ),
             ),
