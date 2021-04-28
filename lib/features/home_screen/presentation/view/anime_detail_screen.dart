@@ -39,7 +39,10 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                         height: 170,
                       ),
                       Container(
-                        color: AppColors.lightTest,
+                        decoration: BoxDecoration(
+                          color: AppColors.lightTest,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
                         margin: EdgeInsets.symmetric(horizontal: 32),
                         child: Column(
                           children: [
@@ -108,9 +111,14 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                   SizedBox(width: 25),
                                   GestureDetector(
                                     onTap: () {
-                                       Navigator.of(context).push(MaterialPageRoute(builder: (_) => AnimeInformationScreen(getAnimesModel: getAnimesModel,)));
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (_) =>
+                                                  AnimeInformationScreen(
+                                                      getAnimesModel:
+                                                          getAnimesModel)));
                                     },
-                                    
+
                                     child: Icon(MdiIcons.informationOutline),
                                     //TODO: Adicionar cores e tamanho certos nos dois botoes
                                   )
@@ -158,16 +166,11 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                       ),
                     ],
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24)
+                  Center(
+                    child: ClipRRect(
+                      child: Image.network(getAnimesModel.image!),
+                      borderRadius: BorderRadius.circular(32),
                     ),
-                    margin: EdgeInsets.only(
-                      top: 23,
-                      left: 47,
-                      right: 47,
-                    ),
-                    child: Image.network(getAnimesModel.image!),
                   ),
                 ],
               ),

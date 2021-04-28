@@ -20,33 +20,49 @@ class AnimeInformationScreen extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      SizedBox(height: 200),
+                      SizedBox(height: 170),
                       Container(
-                        
-                        height: 395,
-                        width: 357,
-                        color: AppColors.lightTest,
-                        margin: EdgeInsets.only(),
-                        child: Text(
-                          getAnimesModel!.description!,
-                          style: GoogleFonts.ropaSans(
-                          fontSize: 18, color: AppColors.darkLetter),
+                        decoration: BoxDecoration(
+                          color: AppColors.lightTest,
+                          borderRadius: BorderRadius.circular(32),
+                        ),
+                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 266,
+                            ),
+                            Container(
+                              margin: EdgeInsets.symmetric(horizontal: 15),
+                              padding: EdgeInsets.only(
+                                left: 16,
+                                right: 16,
+                                top: 10,
+                                bottom: 5,
+                              ),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: AppColors.lightClean),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Text(
+                                getAnimesModel!.description!,
+                                style: GoogleFonts.ropaSans(
+                                  fontSize: 18,
+                                  color: AppColors.darkLetter,
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: 30),
+                          ],
                         ),
                       ),
                     ],
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                     borderRadius: BorderRadius.circular(24)
+                  Center(
+                    child: ClipRRect(
+                      child: Image.network(getAnimesModel!.image!),
+                      borderRadius: BorderRadius.circular(32),
                     ),
-                    margin: EdgeInsets.only(
-                      top: 23,
-                      left: 47,
-                      right: 47,
-                    ),
-                    child: Image.network(getAnimesModel!.image!),
-                    height: 396,
-                    width: 357,
                   ),
                 ],
               ),
