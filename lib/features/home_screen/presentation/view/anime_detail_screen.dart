@@ -3,6 +3,7 @@ import 'package:appanime/core/utils/app_strings.dart';
 import 'package:appanime/core/widgets/styled_button.dart';
 import 'package:appanime/core/widgets/styled_divider_custom.dart';
 import 'package:appanime/features/home_screen/data/models/get_animes_model.dart';
+import 'package:appanime/features/home_screen/presentation/view/anime_information_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -107,8 +108,9 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                   SizedBox(width: 25),
                                   GestureDetector(
                                     onTap: () {
-                                       //Navigator.of(context).push(MaterialPageRoute(builder: (_) => AnimeInformationsScreen()));
+                                       Navigator.of(context).push(MaterialPageRoute(builder: (_) => AnimeInformationScreen(getAnimesModel: getAnimesModel,)));
                                     },
+                                    
                                     child: Icon(MdiIcons.informationOutline),
                                     //TODO: Adicionar cores e tamanho certos nos dois botoes
                                   )
@@ -157,14 +159,15 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                     ],
                   ),
                   Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24)
+                    ),
                     margin: EdgeInsets.only(
                       top: 23,
                       left: 47,
                       right: 47,
                     ),
                     child: Image.network(getAnimesModel.image!),
-                    height: 396,
-                    width: 357,
                   ),
                 ],
               ),
