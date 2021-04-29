@@ -4,6 +4,7 @@ import 'package:appanime/core/widgets/styled_button.dart';
 import 'package:appanime/core/widgets/styled_divider_custom.dart';
 import 'package:appanime/features/home_screen/data/models/get_animes_model.dart';
 import 'package:appanime/features/home_screen/presentation/view/anime_information_screen.dart';
+import 'package:appanime/features/home_screen/presentation/view/anime_list_episodes_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -104,7 +105,14 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      //Navigator.of(context).push(MaterialPageRoute(builder: (_) => AnimeListEpisodesScreen()));
+                                      Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                          builder: (_) =>
+                                              AnimeListEpisodesScreen(
+                                            getAnimesModel: getAnimesModel,
+                                          ),
+                                        ),
+                                      );
                                     },
                                     child: Icon(MdiIcons.file),
                                   ),
@@ -112,11 +120,13 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                   GestureDetector(
                                     onTap: () {
                                       Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (_) =>
-                                                  AnimeInformationScreen(
-                                                      getAnimesModel:
-                                                          getAnimesModel)));
+                                        MaterialPageRoute(
+                                          builder: (_) =>
+                                              AnimeInformationScreen(
+                                                  getAnimesModel:
+                                                      getAnimesModel),
+                                        ),
+                                      );
                                     },
 
                                     child: Icon(MdiIcons.informationOutline),
@@ -168,7 +178,10 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                   ),
                   Center(
                     child: ClipRRect(
-                      child: Image.network(getAnimesModel.image!),
+                      child: Image.network(getAnimesModel.image!,
+                      fit: BoxFit.fill,
+                      height: 400,
+                      width: 250,),
                       borderRadius: BorderRadius.circular(32),
                     ),
                   ),
