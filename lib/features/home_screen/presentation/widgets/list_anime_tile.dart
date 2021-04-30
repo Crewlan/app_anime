@@ -15,12 +15,14 @@ class ListAnimeTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {},
-      child: Container(
-        child: Text(
-          "$animeName - $episodeNumber",
-          style: GoogleFonts.ropaSans(
-            fontSize: 20,
-            color: AppColors.darkLetter
+      child: Center(
+        child: Container(
+          child: Text(
+            "$animeName - $episodeNumber",
+            style: GoogleFonts.ropaSans(
+              fontSize: 20,
+              color: AppColors.darkLetter
+            ),
           ),
         ),
       ),

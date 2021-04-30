@@ -73,38 +73,8 @@ class _HomeScreenState extends State<HomeScreen> {
               color: AppColors.purpleTest,
             ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width / 2,
-            child: TextFormField(
-              style: GoogleFonts.roboto(
-                color: AppColors.purpleTest,
-              ),
-              cursorColor: AppColors.purpleTest,
-              decoration: InputDecoration(
-                hintText: AppStrings.homeAnimeSearchHint,
-                focusColor: AppColors.purpleTest,
-                hintStyle: GoogleFonts.roboto(
-                  color: AppColors.purpleTest,
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: AppColors.purpleTest),
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(
-                    color: AppColors.purpleTest,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {},
-            child: Icon(
-              MdiIcons.heart,
-              size: 24,
-              color: AppColors.purpleTest,
-            ),
-          ),
+    
+    
         ],
       ),
     );

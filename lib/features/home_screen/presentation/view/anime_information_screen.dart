@@ -44,6 +44,7 @@ class AnimeInformationScreen extends StatelessWidget {
                                 border: Border.all(color: AppColors.lightClean),
                                 borderRadius: BorderRadius.circular(24),
                               ),
+                              
                               child: Text(
                                 getAnimesModel!.description!,
                                 style: GoogleFonts.ropaSans(
@@ -60,7 +61,11 @@ class AnimeInformationScreen extends StatelessWidget {
                   ),
                   Center(
                     child: ClipRRect(
-                      child: Image.network(getAnimesModel!.image!),
+                      child: Image.network(getAnimesModel!.image!,
+                      fit: BoxFit.fill,
+                      width: 300,
+                      height: 400,
+                    ),
                       borderRadius: BorderRadius.circular(32),
                     ),
                   ),

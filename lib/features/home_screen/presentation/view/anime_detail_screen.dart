@@ -81,13 +81,7 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                       ),
                                     ],
                                   ),
-                                  GestureDetector(
-                                    onTap: () {},
-                                    child: Icon(
-                                      MdiIcons.heartOutline,
-                                      size: 24,
-                                    ),
-                                  ),
+                          
                                 ],
                               ),
                             ),
@@ -114,7 +108,24 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                         ),
                                       );
                                     },
-                                    child: Icon(MdiIcons.file),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                          builder: (_) =>
+                                              AnimeListEpisodesScreen(
+                                            getAnimesModel: getAnimesModel,
+                                          ),
+                                        ),
+                                      );
+                                        
+                                      },
+                                      child: Text(
+                                        AppStrings.appAnimeEpisodeList,
+                                        style: GoogleFonts.abel(color: AppColors.purpleLetter,
+                                        fontSize: 16 ) ,
+                                      ),
+                                    ),
                                   ),
                                   SizedBox(width: 25),
                                   GestureDetector(
@@ -129,9 +140,11 @@ class _AnimeDetailScreenState extends State<AnimeDetailScreen> {
                                       );
                                     },
 
-                                    child: Icon(MdiIcons.informationOutline),
-                                    //TODO: Adicionar cores e tamanho certos nos dois botoes
-                                  )
+                                    child: Icon(MdiIcons.informationOutline,
+                                    color: AppColors.purplefinal,
+                                    size: 24,),
+                                    
+                                  ),
                                 ],
                               ),
                             ),

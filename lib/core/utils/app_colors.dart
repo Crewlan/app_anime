@@ -12,4 +12,5 @@ class AppColors {
   static const purpleSelected = Color(0xFF5B17C2);
   static const purpleunSelected = Color(0xFFB592EB);
   static const darkLetter = Color(0xFF000000);
+  static const purplefinal = Color(0xFF8951DB);
   }

@@ -13,59 +13,76 @@ class AnimeListEpisodesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: SingleChildScrollView(
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                SizedBox(
-                  height: 170
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    color: AppColors.lightTest,
-                    borderRadius: BorderRadius.circular(32),
-                  ),
-                  margin: EdgeInsets.symmetric(horizontal: 15),
-                  child: Column(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Stack(
+                children: [
+                  Column(
                     children: [
-                      SizedBox(
-                        height: 266
+                      SizedBox(height: 190),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.lightTest,
+                          borderRadius: BorderRadius.circular(32),
                         ),
-                        Container(
-                          height: MediaQuery.of(context).size.height / 2,
-                          margin: EdgeInsets.symmetric(horizontal: 15),
-                          padding: EdgeInsets.only(
-                            left: 16,
-                            right: 16,
-                            top: 10,
-                            bottom: 5,
-                          ),
-                          decoration: BoxDecoration(
-                            border: Border.all(color: AppColors.lightClean ),
-                            borderRadius: BorderRadius.circular(24),
-                          ),
-                          child: ListView.builder(
-                            scrollDirection: Axis.vertical,
-                            itemCount: getAnimesModel!.listEpisodesModel!.length,
-                            itemBuilder: (context, position) {
-                              return ListAnimeTile(
-                                animeName: getAnimesModel!.animeTitle,
-                                episodeNumber: getAnimesModel!.listEpisodesModel![position].titleEpisode,
-                                onTap:() {}
-                              );
-                            },
-                          ),
+                        margin: EdgeInsets.symmetric(horizontal: 15),
+                        child: Column(
+                          children: [
+                            SizedBox(height: 230),
+                            Container(
+                              height: MediaQuery.of(context).size.height / 3,
+                              margin: EdgeInsets.symmetric(horizontal: 15),
+                              padding: EdgeInsets.only(
+                                left: 16,
+                                right: 16,
+                                top: 10,
+                                bottom: 5,
+                              ),
+                              decoration: BoxDecoration(
+                                border: Border.all(color: AppColors.lightClean),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Center(
+                                                              child: ListView.builder(
+                                  scrollDirection: Axis.vertical,
+                                  itemCount:
+                                      getAnimesModel!.listEpisodesModel!.length,
+                                  itemBuilder: (context, position) {
+                                    return ListAnimeTile(
+                                        animeName: getAnimesModel!.animeTitle,
+                                        episodeNumber: getAnimesModel!
+                                            .listEpisodesModel![position]
+                                            .titleEpisode,
+                                        onTap: () {});
+                                  },
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                          ],
                         ),
-                  ],
-                
-                ),
-                ),
-              ],
-            ),
-          ],
+               
+                      ),
+                    ],
+                  ),
+                   Center(
+                    child: ClipRRect(
+                    child: Image.network(
+                      getAnimesModel!.image!,
+                      fit: BoxFit.fill,
+                      height: 400,
+                      width: 300),
+                      borderRadius: BorderRadius.circular(32),),
+                    ),
+                ],
+              ),
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
