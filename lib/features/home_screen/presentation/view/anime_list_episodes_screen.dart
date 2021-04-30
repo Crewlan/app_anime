@@ -43,20 +43,18 @@ class AnimeListEpisodesScreen extends StatelessWidget {
                                 border: Border.all(color: AppColors.lightClean),
                                 borderRadius: BorderRadius.circular(24),
                               ),
-                              child: Center(
-                                                              child: ListView.builder(
-                                  scrollDirection: Axis.vertical,
-                                  itemCount:
-                                      getAnimesModel!.listEpisodesModel!.length,
-                                  itemBuilder: (context, position) {
-                                    return ListAnimeTile(
-                                        animeName: getAnimesModel!.animeTitle,
-                                        episodeNumber: getAnimesModel!
-                                            .listEpisodesModel![position]
-                                            .titleEpisode,
-                                        onTap: () {});
-                                  },
-                                ),
+                              child: ListView.builder(
+                                scrollDirection: Axis.vertical,
+                                itemCount:
+                                    getAnimesModel!.listEpisodesModel!.length,
+                                itemBuilder: (context, position) {
+                                  return ListAnimeTile(
+                                      animeName: getAnimesModel!.animeTitle,
+                                      episodeNumber: getAnimesModel!
+                                          .listEpisodesModel![position]
+                                          .titleEpisode,
+                                      onTap: () {});
+                                },
                               ),
                             ),
                             SizedBox(
