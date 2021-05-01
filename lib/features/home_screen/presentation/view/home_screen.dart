@@ -1,6 +1,7 @@
 import 'package:appanime/core/utils/app_colors.dart';
 import 'package:appanime/core/utils/app_strings.dart';
 import 'package:appanime/core/widgets/styled_divider_custom.dart';
+import 'package:appanime/core/widgets/styled_loading.dart';
 import 'package:appanime/features/home_screen/data/models/get_animes_model.dart';
 import 'package:appanime/features/home_screen/presentation/bloc/home_screen_bloc.dart';
 import 'package:appanime/features/home_screen/presentation/view/anime_detail_screen.dart';
@@ -31,6 +32,10 @@ class _HomeScreenState extends State<HomeScreen> {
     switch (state.status) {
       case HomeScreenStatus.ready:
         return _homeScreen(context, state.getAnimes);
+      case HomeScreenStatus.loading:
+      return StyledLoading(
+        message: AppStrings.homeloading,
+      );
       default:
         return Container(
           child: Center(

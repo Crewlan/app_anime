@@ -17,4 +17,5 @@ class AppStrings {
   static const homeAnimeMore = 'Ver mais';
   static const homeAnimeNew = 'Lançamentos';
   static const homeAnimeMoreView = 'Mais assistidos';
+  static const homeloading = 'Carregando';
 }
